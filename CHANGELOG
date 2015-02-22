@@ -1,0 +1,110 @@
+/**
+ * gameME Plugin
+ * http://www.gameme.com
+ * Copyright (C) 2007-2014 TTS Oetzel & Goerz GmbH
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+
+29. May 2013 [V2.3]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Reworked weapon stats handling. Other plugins are now working properly beside
+  gameME Stats, for example the "/me" command
+- Minor changes
+
+
+23. February 2013 [V2.2]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Added "Reset Statistics" to player menu (gameME menu)
+Fixed: Crashes because of players without team-id
+- Minor changes
+
+
+31. March 2012 [V2.1]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Added dynamic support to block ingame commands
++ Added support for Half-Life: Deathmatch
+- Minor changes
+
+
+02. February 2010 [V2.0]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Plugin is now called "gameME Plugin"
++ Multiple recipients for ingame messages
++ Major performance improvements
+
+
+09. September 2009 [V1.9]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
+- Internal Release
+
+
+02. August 2008 [V1.8]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
+- Adapted ingame menu for the game "Team Fortress Classic"
+
+
+02. August 2008 [V1.7]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Removed default message prefix and introduce a new cvar to define the prefix manually
+- Removed some unncessary stuff
+- Make the code more stable and reliable
+Fixed: Some debug messages
+
+
+08. July 2008 [V1.6]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Extend logging with locations for kill and suicides
+- Refactoring
+- Minor changes
+Fixed: Bots are not swapped on the "hlx_amx_swap" command
+Fixed: Several bugs for "Natural Selection"
+
+
+30. June 2008 [V1.5]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Major performance improvements
++ Added "hlx_amx_hint" command
++ Added TeamInfo event to ensure the correct team colors (cstrike only)
++ Added support for the game "Team Fortress Classic"
++ Added support for the game "Natural Selection"
+- Reworked "hlx_amx_csay" command
+Fixed: "hlx_amx_say" command not working
+
+
+9. December 2007 [V1.4]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Trigger player action "headshot" on headshot kill
+- Team colors are checked on every call
+
+
+2. December 2007 [V1.3]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
++ Added HLstatsX Ingame Menu triggered by "hlx", "hlstatsx", "hlx_menu"
++ Added colored chat messages for the game cstrike
++ Block HLstatsX ingame commands by default from the chat area
++ Added "hlx_amx_psay2" command to display complete messages in green (cstrike only)
++ Added swap command to enable Team-Balancer support
++ Added public cvars for the ingame plugin
+Fixed: Some minor bugs and removed unnecessary code
+Fixed: The webpages in the motd are now scrollable
+
+
+8. November 2007 [V1.2]
+--------------------------------------------------------------------------------------------------------------------------------------------- 
+Fixed: Too high stack memory allocation
+Fixed: Plugin recompile for latest amxx version 1.8
+
