@@ -584,7 +584,7 @@ public client_kill()
 					killer_origin[0], killer_origin[1], killer_origin[2],
 					victim_origin[0], victim_origin[1], victim_origin[2])
 
-				if (is_headshot > 0) {
+				if ((is_headshot > 0) && (strcmp(killer_team, victim_team) != 0)) {
 					log_message("^"%s<%d><%s><%s>^" triggered ^"headshot^"", killer_name, killer_userid, killer_authid, killer_team)
 				}
 			}
