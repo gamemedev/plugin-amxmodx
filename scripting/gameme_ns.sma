@@ -1,7 +1,7 @@
 /**
  * gameME Plugin
  * http://www.gameme.com
- * Copyright (C) 2007-2015 TTS Oetzel & Goerz GmbH
+ * Copyright (C) 2007-2016 TTS Oetzel & Goerz GmbH
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -43,7 +43,7 @@ new display_menu_keys = MENU_KEY_0|MENU_KEY_1|MENU_KEY_2|MENU_KEY_3|MENU_KEY_4|M
 
 public plugin_init()
 {
-	register_plugin("gameME Plugin", "2.3", "TTS Oetzel & Goerz GmbH")
+	register_plugin("gameME Plugin", "2.4", "TTS Oetzel & Goerz GmbH")
 	// register_event("Damage", "Event_Damage", "b", "2!0", "3=0", "4!0")
 	register_srvcmd("gameme_amx_psay",   "gameme_amx_psay",   0, "<name or #userid><message> - sends private message")
 	register_srvcmd("gameme_amx_psay2",  "gameme_amx_psay2",  0, "<name or #userid><colored><message> - sends green colored private message")
@@ -189,7 +189,7 @@ public plugin_init()
 	TrieSetCell(g_blocked_commands, "/gameme_menu", 1)
 	TrieSetCell(g_blocked_commands, "!gameme_menu", 1)
 
-	register_cvar("gameme_plugin_version", "2.3 (HL1)", FCVAR_SPONLY|FCVAR_SERVER)
+	register_cvar("gameme_plugin_version", "2.4 (HL1)", FCVAR_SPONLY|FCVAR_SERVER)
 	register_cvar("gameme_webpage", "http://www.gameme.com", FCVAR_SPONLY|FCVAR_SERVER)
 	g_gameme_block_commands = register_cvar("gameme_block_commands", "1")
 	register_srvcmd("gameme_block_commands_values", "gameme_block_commands_values", 0, "<string> - adds blocked chat commands")
