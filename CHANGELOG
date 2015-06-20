@@ -1,7 +1,7 @@
 /**
  * gameME Plugin
  * http://www.gameme.com
- * Copyright (C) 2007-2015 TTS Oetzel & Goerz GmbH
+ * Copyright (C) 2007-2016 TTS Oetzel & Goerz GmbH
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -21,7 +21,7 @@
 
 Next Release [V2.4]
 --------------------------------------------------------------------------------------------------------------------------------------------- 
-Fixed: Trigger headshot action on team-kills
+Fixed: Headshot action on team-kills for the game "Counter-Strike"
 - Minor changes
 
 
