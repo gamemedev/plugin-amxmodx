@@ -22,7 +22,9 @@
 Next Release [V2.4]
 --------------------------------------------------------------------------------------------------------------------------------------------- 
 Fixed: Headshot action on team-kills for the game "Counter-Strike"
+- Syntax adapated for 1.8.3
 - Minor changes
+- Compiled against 1.8.3-dev+5116
 
 
 29. May 2013 [V2.3]

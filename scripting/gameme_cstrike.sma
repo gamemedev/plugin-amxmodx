@@ -639,7 +639,7 @@ public dump_weaponstats(id)
 }
 
 
-public client_disconnect(id)
+public client_disconnected(id)
 {
 	if ((id > 0) && (is_user_connected(id))) {
 		if ((ct_player_color == -1) || (id == ct_player_color)) {
@@ -1034,10 +1034,10 @@ public gameme_amx_csay(id, level, cid)
 	read_args(message, 191)
 	remove_quotes(message)
 	
-	new color3[0][] = {255, 255, 255}
+	new color3[3] = {255, 255, 255}
 	new Float:verpos = 0.3
 	
-	set_hudmessage(color3[0][0], color3[0][1], color3[0][2], -1.0, verpos, 0, 6.0, 6.0, 0.5, 0.15, -1)
+	set_hudmessage(color3[0], color3[1], color3[2], -1.0, verpos, 0, 6.0, 6.0, 0.5, 0.15, -1)
 	show_hudmessage(0, "%s", message)
 
 	return PLUGIN_HANDLED
@@ -1103,10 +1103,10 @@ public gameme_amx_hint(id, level, cid)
 			if (client > 0) {
 				new player_index = get_player_index(client);
 				if ((player_index > 0) && (!is_user_bot(player_index)) && (is_user_connected(player_index))) {
-					new color3[0][] = {255, 128, 0}
+					new color3[3] = {255, 128, 0}
 					new Float:verpos = 0.80
 	
-					set_hudmessage(color3[0][0], color3[0][1], color3[0][2], -1.0, verpos, 0, 6.0, 6.0, 0.5, 0.15, -1)
+					set_hudmessage(color3[0], color3[1], color3[2], -1.0, verpos, 0, 6.0, 6.0, 0.5, 0.15, -1)
 					show_hudmessage(player_index, "%s", client_message)
 				}	
 			}
